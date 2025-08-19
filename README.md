@@ -3,15 +3,17 @@
 ## Overview
 Chat interface that lets users query steel manufacturing ESG data using natural language. Backend uses FastAPI and OpenAI to translate queries to SQL and return tabular results.
 
-## Repo structure
+## Repo structure## 📂 Project Structure  
+
+```plaintext
 esg-chatbot/
-├─ backend/                     # FastAPI backend
+├─ backend/                     
 │  ├─ app.py                    # Main FastAPI app
 │  ├─ utils.py                  # Utility functions (DB connection, helpers, etc.)
 │  ├─ requirements.txt          # Python dependencies
 │  ├─ .env.example              # Example environment variables
 │
-├─ frontend/                    # React frontend
+├─ frontend/                    
 │  ├─ package.json              # Frontend dependencies
 │  ├─ public/
 │  │   └─ index.html            # Root HTML file
@@ -19,18 +21,18 @@ esg-chatbot/
 │      ├─ index.js              # Entry point for React
 │      └─ App.jsx               # Main React component
 │
-├─ scripts/                     # Data preprocessing scripts
+├─ scripts/                     
 │  ├─ import_csv_to_sqlite.py   # Load CSV data into SQLite DB
 │  └─ normalize_esg.py          # Normalize/clean ESG data
 │
-├─ data/                        # Dataset storage
+├─ data/                        
 │  └─ Steel_Manufacturing_ESG_data.csv   # Place your dataset here
 │
-├─ docs/                        # Documentation
+├─ docs/                        
 │  └─ ER_summary.txt            # Entity-Relationship summary
 │
 ├─ .gitignore                   # Ignore unnecessary files
-├─ README.md                    # Project documentation
+└─ README.md                    # Project documentation
 
 
 ## Setup (local)
