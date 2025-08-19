@@ -3,7 +3,7 @@
 ## Overview
 Chat interface that lets users query steel manufacturing ESG data using natural language. Backend uses FastAPI and OpenAI to translate queries to SQL and return tabular results.
 
-## Repo structure## 📂 Project Structure  
+## 📂 Project Structure  
 
 ```plaintext
 esg-chatbot/
@@ -43,4 +43,5 @@ esg-chatbot/
    python -m venv venv
    source venv/bin/activate
    pip install -r backend/requirements.txt
+
 
