@@ -1,0 +1,72 @@
+# =========================
+# Python / FastAPI backend
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.android
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# PyInstaller
+*.spec
+build/
+dist/
+
+# Coverage / Testing
+.coverage
+*.cover
+coverage.xml
+htmlcov/
+
+# =========================
+# Node.js / React frontend
+# =========================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/.next/
+frontend/out/
+frontend/.nuxt/
+frontend/.turbo/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Deployment / Misc
+# =========================
+*.bak
+*.orig
+*.rej
+*.tar.gz
+*.zip
+*.tgz

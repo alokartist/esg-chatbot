@@ -1,0 +1,41 @@
+ESG Data Chatbot - Normalized schema suggestion
+
+Tables:
+
+1) companies
+   - company_id INTEGER PRIMARY KEY
+   - company_name TEXT
+   - country TEXT
+   - sector TEXT
+
+2) plants
+   - plant_id INTEGER PRIMARY KEY
+   - company_id INTEGER REFERENCES companies(company_id)
+   - plant_name TEXT
+   - location TEXT
+
+3) reports
+   - report_id INTEGER PRIMARY KEY
+   - plant_id INTEGER REFERENCES plants(plant_id)
+   - year INTEGER
+   - reporting_period TEXT
+
+4) emissions
+   - emission_id INTEGER PRIMARY KEY
+   - report_id INTEGER REFERENCES reports(report_id)
+   - scope TEXT
+   - co2_emissions_tons REAL
+
+5) resources
+   - resource_id INTEGER PRIMARY KEY
+   - report_id INTEGER REFERENCES reports(report_id)
+   - water_consumption_m3 REAL
+   - energy_mwh REAL
+   - renewable_energy_pct REAL
+
+6) social_governance
+   - sg_id INTEGER PRIMARY KEY
+   - report_id INTEGER REFERENCES reports(report_id)
+   - employee_count INTEGER
+   - lost_time_injuries INTEGER
+   - board_diversity_pct REAL
