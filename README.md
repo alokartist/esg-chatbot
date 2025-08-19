@@ -34,7 +34,7 @@ esg-chatbot/
 ├─ .gitignore                   # Ignore unnecessary files
 └─ README.md                    # Project documentation
 
-
+```
 ## Setup (local)
 1. Clone repo.
 2. Place `Steel_Manufacturing_ESG_data.csv` in `data/`.
@@ -43,5 +43,6 @@ esg-chatbot/
    python -m venv venv
    source venv/bin/activate
    pip install -r backend/requirements.txt
+
 
 
